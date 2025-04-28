@@ -1,0 +1,83 @@
+body {
+    background-color: #085574;
+    display: flex;
+    flex-direction: column; /* Para que los participantes estén encima de la calculadora */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usar min-height para asegurar que al menos ocupe toda la ventana */
+    margin: 0;
+    color: white; /* Color de texto para la sección de participantes */
+    font-family: sans-serif; /* Fuente básica para la sección de participantes */
+    position: relative; /* Establecer como contenedor relativo para posicionar la imagen */
+    background-image: url('xd.jpg'); /* Añade la ruta de tu imagen aquí */
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+}
+
+
+
+.participantes {
+    text-align: left;
+    margin-bottom: 20px; /* Espacio entre los participantes y la calculadora */
+}
+
+.participantes ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.participantes li {
+    margin: 2px 0;
+}
+
+.calculadora {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background-color: #cccccc27;
+}
+
+.fila {
+    display: flex;
+}
+
+button {
+    flex: 1;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    background-color: #b1515100;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #311818;
+}
+
+.boton-ac {
+    background-color: #dd004200;
+}
+
+.boton-c {
+    background-color: #ff000000;
+}
+
+.boton-operador {
+    background-color: #1c222400;
+}
+
+.boton-igual {
+    background-color: #00000013;
+}
